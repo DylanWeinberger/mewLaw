@@ -1,0 +1,529 @@
+.mewLogo {
+  width: 250px;
+}
+
+.contact_head {
+  position: relative;
+  font-family: 'Stoke', serif;
+  font-size: 12px;
+  top: -40px;
+  text-align: center;
+  padding: 5px;
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+  left: 85%;
+  top: -70px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  background-color: #000076;
+
+  transition: .7s;
+  z-index: 10;
+}
+
+.hamburger:hover {
+  background-color: black;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 4px;
+  right: 4px;
+  height: 4px;
+  background: white;
+  
+}
+
+.hamburger span::before,
+.hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: white;
+  content: "";
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.hamburger span::before {
+  top: -15px;
+  transition-property: top, transform;
+}
+
+.hamburger span::after {
+  bottom: -15px;
+  transition-property: bottom, transform;
+}
+
+
+/* active state, i.e. menu open */
+.hamburger.is-active {
+  background-color: black;
+}
+
+.hamburger.is-active span {
+  background: none;
+}
+
+.hamburger.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.hamburger.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.hamburger.is-active span::before,
+.hamburger.is-active span::after {
+  transition-delay: 0s, 0.3s;
+}
+
+.navigation {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  top: -50px;
+  transition: 1s;
+  overflow: hidden;
+  height: 0px;
+  width: 320px;
+}
+
+.navigation.active{
+  transition: 1s;
+  /*top: -50px;*/
+  height: 540px;
+  display: block;
+  background-color: rgba(0, 0, 118, .7);
+}
+
+.navigation li {
+  list-style: none;
+  font-family: 'Quattrocento', serif;
+  color: white;
+  position: relative;
+  left: -20px;
+  padding: 5px;
+}
+
+.navigation a {
+  font-style: italic;
+  color: white;
+}
+
+.navList {
+  opacity:0;
+  transition: 1s;
+}
+
+.navList.active {
+  opacity: 1;
+}
+
+.navSection {
+  margin-bottom: 8px;
+  margin-top: 5px;
+}
+
+.newNavSection {
+  margin-top: 5px;
+}
+
+.workWithUsLine {
+  /*width: 1px;
+  size: 500;*/
+  background-color: white;
+  position: absolute;
+  top: 60px;
+}
+
+.areaOfPracticeLine {
+  background-color: white;
+  position: absolute;
+  top: 190px;
+}
+
+.ourAttorneysLine {
+  background-color: white;
+  position: absolute;
+  top: 310px;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active-slide{
+  display: block;
+}
+
+.slider{
+    position: relative; 
+    width: 320px; 
+    height: 320px; 
+    top: -40px; 
+}
+
+.slider div {
+    position: absolute; 
+    width: 100%;
+}
+
+.slide img {
+  width: 320px;
+}
+
+.slider-nav{
+text-align: center;
+position: relative;
+top: -100px;
+}
+
+.slider-nav img {
+  width: 40px;
+  position: relative;
+  top: 8px;
+}
+
+.slider-dots {
+  list-style: none;
+  display: inline-block;
+}
+
+.slider-dots li {
+  display: inline;
+  margin-right: 20px;
+  padding-right: 20px;
+  color: #bbbcbc;
+}
+
+.dot.active-dot {
+  color: #363636;
+}
+
+
+
+.arrow {
+
+background-color: rgba(254, 248, 238, .3);
+z-index: 100;
+}
+
+.arrow:hover {
+
+}
+
+.arrow p {
+  font-size: 42px;
+  color: white;
+  padding-top: 35px;
+}
+
+.left {
+  position: absolute;
+  left: 5px;
+  top: 210px;
+  height: 220px;
+  width: 20px;
+  width: 50px;
+}
+
+.right {
+  position: absolute;
+  left: 280px;
+  top: 210px;
+  height: 220px;
+  width: 20px;
+  width: 50px;
+}
+
+.headline_2 {
+  position: relative;
+  top: -90px;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Stoke', serif;
+}
+
+.headline_2_bar {
+  position: relative;
+  top: -80px;
+  margin-left: 10px;
+}
+
+.excerpt {
+  position: relative;
+  top: -80px;
+  width: 280px;
+  left: 20px;
+  text-align: center;
+  font-family: 'Stoke', serif;
+}
+
+.excerpt hr {
+  position: relative;
+  top: 0px;
+}
+
+.contact_buttons {
+  position: relative;
+  top: -80px;
+  text-align: center;
+  margin-left: 60px;
+}
+
+.contact_buttons button {
+  height: 30px;
+  display: block;
+  width: 200px;
+  background-color: #000076;
+  color: white;
+  border-radius: 12px;
+}
+
+.contact_buttons button:first-child {
+  margin-bottom: 20px;
+}
+
+#contact_form {
+  position: relative;
+  top: -40px;
+  border: solid black 2px;
+  margin-left: 10px
+}
+
+#contact_form div {
+  padding: 10px;
+  margin-left: 20px;
+  text-align: left;
+}
+
+#contact_form label {
+  display: block;
+  padding-bottom: 10px;
+}
+
+#contact_form h3 {
+  text-align: center;
+}
+
+#message {
+  width: 200px;
+  height: 150px;
+}
+
+#submit_button {
+  position: relative;
+  left:80px;
+}
+
+.foot {
+  background-color: #000076;
+  height: 200px;
+  width: 320px;
+}
+
+.back_to_top {
+  text-decoration: none;
+  position: relative;
+  left: 90px;
+  color: white;
+}
+
+.foot p {
+  color: white;
+  text-align: center;
+}
+
+/*Galaxy S5 MEDIA QUERY*/
+@media all and (min-width: 360px) {
+  .mewLogo{
+    width: 280px;
+  }
+  
+  .navigation {
+    width: 360px;
+  }
+
+  .slider{
+    width: 360px;
+  }
+
+  .slide img {
+    width: 360px;
+  }
+
+  .exceprt {
+    /*width: 320px;*/
+    position: relative;
+    left: 80px;
+  }
+
+  .foot {
+    width: 360px;
+  }
+
+  .back_to_top {
+    left: 110px;
+  }
+
+}
+/*IPHONE 6 MEDIA QUERY*/
+@media all and (min-width: 375px) {
+  
+  .mewLogo{
+    width: 280px;
+  }
+
+  .navigation {
+    width: 375px;
+  }
+
+  .slider {
+    width: 375px;
+  }
+
+  .slide img {
+    width: 100%;
+  }
+  
+  .excerpt {
+    width: 320px;
+  }
+
+  .contact_buttons {
+    margin-left: 85px;
+  }
+
+  .foot {
+    width: 375px;
+  }
+  .back_to_top {
+    left: 120px;
+  }
+}
+
+/*MEDIA QUERY FOR IPAD*/
+
+@media all and (min-width: 768px) {
+  .mewLogo{
+    width: 600px;
+    position: relative;
+    left: 80px;
+  }
+  
+  .hamburger {
+    position: absolute;
+    top: 120px;
+    right: 0px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .hamburger span {
+    top: 45px;
+  }
+
+  .navigation {
+    width: 768px;
+    top: 20px;
+    font-size: 24px;
+    line-height: 1.8em;
+  }
+
+  .navigation.active {
+    height: 1000px;
+  }
+
+  .contact_head{
+    top: 0px;
+    font-size: 24px;
+  }
+
+  .slider {
+    top: 40px;
+    width: 768px;
+  }
+
+  .slider-nav {
+    top: 280px;
+  }
+  
+  .excerpt_container {
+    position: relative;
+    top: 400px;
+  }
+
+  .headline_2 {
+    width: 500px;
+    line-height: 1.5em;
+    font-size: 24px;
+  }
+
+  .excerpt {
+    width: 500px;
+    left: 134px;
+    line-height: 1.5em;
+    font-size: 18px;
+  }
+
+  .contact_buttons button {
+    display: inline;
+    width: 200px;
+    height: 50px;
+    margin-right: 60px;
+    margin-top: 20px;
+  }
+
+  #contact_form {
+    top: 400px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .foot {
+    position: relative;
+    top: 500px;
+    width: 768px;
+  }
+
+  .foot p {
+    font-size: 24px;
+  }
+
+  .foot a {
+    font-size: 24px;
+  }
+
+  .back_to_top {
+    left: 320px;
+  }
+}
+
+
+
